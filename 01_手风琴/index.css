@@ -1,0 +1,48 @@
+html {
+  font-size: 12px;
+}
+.container {
+  width: 90%;
+  height: 56.6667rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+}
+@media all and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+.item {
+  width: 7.5rem;
+  height: 56.6667rem;
+  border-radius: 3.75rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.7s ease-in;
+  margin: 0 .8333rem;
+  cursor: pointer;
+}
+.item:nth-child(1) {
+  background-image: url(./assets/七宫智音03.jpg);
+}
+.item:nth-child(2) {
+  background-image: url(./assets/夜刀神十香02.jpg);
+}
+.item:nth-child(3) {
+  background-image: url(./assets/御坂美琴01.jpg);
+}
+.item:nth-child(4) {
+  background-image: url(./assets/白井黑子02.jpg);
+}
+.item:nth-child(5) {
+  background-image: url(./assets/鸢一折纸02.jpg);
+}
+
+.active {
+  width: 71.6667rem;
+}
